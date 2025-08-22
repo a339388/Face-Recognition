@@ -33,7 +33,7 @@ Core dependencies (see `requirements.txt` for exact versions):
 
 ## ⚙️ Parameters Explanation
 
-## 1. `a.py` – Building Face Dataset
+## 1. `Step1.py` – Building Face Dataset
 This script captures face images from the RTSP stream and stores them in a dataset folder for later use.
 
 - **`person_name = "x"`**  
@@ -59,7 +59,7 @@ This script captures face images from the RTSP stream and stores them in a datas
 
 ---
 
-## 2. `b.py` – Building Face Embedding Database
+## 2. `Step2.py` – Building Face Embedding Database
 This script processes the collected dataset and generates an **embedding database** (`face_db.pkl`).
 
 - It scans all images stored under `face_dataset/` folders.  
@@ -70,7 +70,7 @@ This script processes the collected dataset and generates an **embedding databas
 
 ---
 
-## 3. `c3-1.py` – Real-Time Recognition & Access Control
+## 3. `Main.py` – Real-Time Recognition & Access Control
 The main program for recognition and access control.
 
 ### 🔑 MQTT Settings
